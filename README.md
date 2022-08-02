@@ -25,8 +25,6 @@
 │  ├─SliderMain.jsx
 │  ├─SliderItem.jsx
 │  └─SliderButton.jsx
-
-
 ```
 
 ## 🔧 How To Use?
