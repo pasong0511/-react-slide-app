@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 📡 News Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💁‍♂️ Introducing Project
 
-## Available Scripts
+> -   무한 스크롤을 지원하는 News Viewer 를 구현한 결과물 입니다.
+> -   스크롤을 아래로 내리면 5개의 기사를 가져오게됩니다.
+> -   카테고리를 구분하여 데이터를 가져올 수 있습니다.
 
-In the project directory, you can run:
+## 📅 Date / Developer
 
-### `npm start`
+> -   2022.04. 1 ~ 2022. 04 15(2주)
+> -   1인 프로젝트
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Point
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> -   Infinite Scroll
+> -   Component
 
-### `npm test`
+## 🛠 Using Skill
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> -   HTML5
+> -   CSS3
+> -   Vanilla Javascript
+> -   Axios
+> -   IntersectionObserver API
+> -   Proxy
+> -   Observer Pattern
+> -   Eslintrc
 
-### `npm run build`
+## 🌐 News API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> -   [News API](https://newsapi.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔔 Alarm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> -   본 프로젝트는 무로 apikey를 사용하였습니다.
+> -   News API 정책 변경으로 무료 apikey는 localhost에서만 작동합니다.
 
-### `npm run eject`
+## 📁 Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+├─components
+│  ├─App.js : new view 코어 부분
+│  ├─api.js : axios를 이용하여 데이터 요청
+│  ├─index.js : root 클래스 선택하여 news App 화면에 렌더링
+│  ├─Nav.js : 상단 네비게이션 바 생성
+│  └─NewsList.js  : 썸네일 이미지, 뉴스 링크, 타이틀 등 뉴스 아이템
+└─index.html
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔧 How To Use?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### start
 
-## Learn More
+```
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👓 Screen
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>좌우 이동 가능한 인피니트 슬라이드</p>
+<center>
+  <img
+    src="./readme_assets/img01.gif"
+  />
+</center>
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>페이지 네이션으로 이동 가능</p>
+<center>
+  <img
+    src="./readme_assets/img02.gif"
+  />
+</center>

@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import img0 from "./images/img00.png";
+import img1 from "./images/img01.png";
+import img2 from "./images/img02.png";
+import img3 from "./images/img03.png";
+import img4 from "./images/img04.png";
+import img5 from "./images/img05.png";
+
+import PullSlider from "./components/PullSlider/SliderMain";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const data = [img0, img1, img2, img3, img4, img5];
+
+    return (
+        <div className="App">
+            <PullSlider data={data} />
+        </div>
+    );
 }
 
 export default App;
